@@ -7,8 +7,8 @@ module.exports = {
    upload (localFile){
     /*七牛云设置start*/
     let bucket = 'tbmrk';
-    let accessKey = 'Z_YWUujr08yBHUXccMK2u6MFuOAzfPK-uk8_ooXa';
-    let secretKey = '1wDAmWoQUkvAnVp4sevdGeeN4UKmNef6PpXw11WD';
+    let accessKey = '你的七牛云配置';
+    let secretKey = '你的七牛云配置';
     let mac = new qiniu.auth.digest.Mac(accessKey, secretKey);
     let options = {
         scope: bucket,
@@ -55,8 +55,8 @@ module.exports = {
     },
     delete(url){
         let bucket = 'tbmrk';
-        let accessKey = 'Z_YWUujr08yBHUXccMK2u6MFuOAzfPK-uk8_ooXa';
-        let secretKey = '1wDAmWoQUkvAnVp4sevdGeeN4UKmNef6PpXw11WD';
+        let accessKey = '你的七牛云配置';
+        let secretKey = '你的七牛云配置';
         let mac = new qiniu.auth.digest.Mac(accessKey, secretKey);
         let config = new qiniu.conf.Config();
         config.zone = qiniu.zone.Zone_z2;
